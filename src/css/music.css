@@ -1,0 +1,39 @@
+#musicAudio {
+  width: 300px;
+  height: 50px;
+  font-size: 0px;
+  background-color: #F5F5DC;
+  border-radius: 10px;
+}
+
+#musicAudio * {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+#musicAudioPlayAndPause {
+  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px;
+}
+
+#musicAudioTime {
+  margin: 5px 5px;
+}
+
+#musicAudioProgress, #musicAudioProgressPar {
+  height: 25px;
+  -webkit-border-radius: 10px;
+}
+
+#musicAudioProgressPar {
+  width: 140px;
+  background-color: #F0FFFF;
+}
+
+#musicAudioProgress {
+  width: 0px;
+  background-color: #7FFFD4;
+}

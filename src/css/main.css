@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+canvas {
+    background: -webkit-linear-gradient(#23E5FF, #3A4FFF); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#23E5FF, #3A4FFF); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#23E5FF, #3A4FFF); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#23E5FF, #3A4FFF); /* 标准的语法 */
+}
+
+.maka-Arrow {
+    position: absolute;
+    bottom: 15px;
+    left: -25px;
+    right: 0;
+    margin: auto;
+    width: 48px;
+    text-align: center;
+    display: none;
+    z-index: 2;
+    animation-name: arrowing;
+    -webkit-animation-name: arrowing;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.maka-Arrow img {
+    width: 48px;
+}
+
+@keyframes arrowing {
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    to {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+}
+
+@-webkit-keyframes arrowing {
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    to {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+.loading-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(#23E5FF, #3A4FFF);
+    background: -o-linear-gradient(#23E5FF, #3A4FFF);
+    background: -moz-linear-gradient(#23E5FF, #3A4FFF);
+    background: linear-gradient(#23E5FF, #3A4FFF);
+    z-index: 9;
+    text-align: center;
+    font-size: 50px;
+    color:#fff;
+    padding-top:300px;
+    
+}
